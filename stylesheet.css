@@ -1,63 +1,192 @@
-/* this is vry cleat to test git brancess */
-
-*{
-    padding: 0;
+/* =============== GLOBAL RESET =============== */
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font: "roboto";
-    display: flex;
-    flex-direction: column; 
-}
-#header, #footer{
-background-color: #1f2937;
-}
-
-#header{
-    font-size: 18px;
-    color: #e5e7eb;
+body {
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-
-}
-#headerUpperPart{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-#headerLowerPart{
-    display: flex;
-    flex-direction: row;
-    
-
-}
-#links{
-    display: flex;
-    flex-direction: row;
 }
 
-#headerLower{
-    font-size:48px ;
+/* =============== HEADER SECTION =============== */
+#header {
+    background-color: #1f2937;
     color: #f9faf8;
+    padding: 20px 150px 80px;
+}
+
+/* Top part: logo + links */
+#headerUpperPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
     font-weight: 900;
 }
 
-#logo{
-    font-size:24px ;
-    color: #f9faf8;
-    
+#links {
+    display: flex;
+    gap: 20px;
 }
 
-button:hover{
-    background-color:#3882f6;
+#links p {
+    font-size: 18px;
+    color: #e5e7eb;
+    cursor: pointer;
 }
 
-#quotePart{
-    background-color: #e5e7eb;
+/* Bottom part: hero area */
+#headerLowerPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+/* LEFT SIDE */
+.hero-left {
+    max-width: 450px;
+}
+
+#headerLower {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #3882f6;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* RIGHT SIDE (IMAGE BOX) */
+#imgPlace {
+    background-color: #6d747d;
+    color: white;
+    width: 450px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =============== MAIN INFO SECTION =============== */
+#main {
+    padding: 60px 150px;
+    text-align: center;
+}
+
+#main h1 {
     font-size: 36px;
-    color:#1f2937;
-    font-weight: 300;
+    font-weight: 900;
+    margin-bottom: 50px;
+    color: #1f2937;
+}
+
+#infoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.infoBox {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.infoBox p {
+    font-size: 14px;
+    color: #555;
+    width: 150px;
+}
+
+/* =============== QUOTE SECTION =============== */
+#quotePart {
+    background-color: #e5e7eb;
+    padding: 100px 220px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.author {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    color: #1f2937;
+}
+
+/* =============== CALL TO ACTION =============== */
+#adSec {
+    padding: 80px 150px;
+}
+
+#adBox {
+    background-color: #3882f6;
+    padding: 40px 70px;
+    border-radius: 12px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#adBox h1 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#adBox p {
+    font-size: 18px;
+}
+
+#adBox button {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+/* =============== FOOTER =============== */
+#footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
 }
