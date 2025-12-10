@@ -6,9 +6,8 @@
 
 body{
     font: "roboto";
-    display: flex;
-    flex-direction: column; 
 }
+
 #header, #footer{
 background-color: #1f2937;
 }
@@ -21,17 +20,8 @@ background-color: #1f2937;
     padding-left:200px;
     padding-right:200px;
     gap:20px;
-    
-
 }
 
-#imgPlace{
-    background-color:grey;
-    padding: 80px;
-    width:400px;
-    height: 200px;
-
-}
 #headerUpperPart{
     display: flex;
     flex-direction: row;
@@ -39,16 +29,17 @@ background-color: #1f2937;
     padding-top: 20px;
 }
 
-
-
+#logo{
+    font-size:24px ;
+    color: #f9faf8;
+}
 
 #links{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    
-
+    gap: 30px; 
 }
+
 #headerLowerPart{
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +48,7 @@ background-color: #1f2937;
     justify-content: space-between;
     padding-bottom: 80px ;
 }
-#container{
+#intro{
     display: flex;
     flex-direction: column;
     gap:20px;
@@ -66,22 +57,6 @@ background-color: #1f2937;
 #para{
     width:250px;
     height: auto;
-}
-#links{
-    display: flex;
-    flex-direction: row;
-}
-
-#headerLower{
-    font-size:48px ;
-    color: #f9faf8;
-    font-weight: 900;
-}
-
-#logo{
-    font-size:24px ;
-    color: #f9faf8;
-    
 }
 
 button{
@@ -92,6 +67,13 @@ button{
     border: 2px solid #3882f6  ;
     color: #e5e7eb;
     font-weight: 600;
+}
+
+#imgPlace{
+    background-color:grey;
+    padding: 80px;
+    width:400px;
+    height: 200px;
 }
 
 #quotePart{
@@ -138,10 +120,7 @@ button{
 }
 
 #boxes p{
-
     width:130px;
-    
-
 }
 
 
